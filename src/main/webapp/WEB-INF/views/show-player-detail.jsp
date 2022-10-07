@@ -6,7 +6,7 @@
 <h1>Player Detail</h1>
     <p>Player Id :  ${pId} </p>
     <p>Name : <b> ${pName} </b></p>
-    <pAge :  ${pAge} </p>
+    <p> Age :  ${pAge} </p>
     <p>Nationality :  ${pNationality} </p>
 </body>
 </html>

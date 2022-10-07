@@ -37,7 +37,9 @@ public class PlayerController {
 
     //USING STRING ANNOTATION
     @RequestMapping(value ="/showPlayerDetail" )
-    public String showPlayerDetail(@RequestParam("PlayerName") String playerName, Model model){
+
+    //without HttpServletRequest -> using Spring Annotation @RequestParam
+    public String showPlayerDetail(@RequestParam(value = "PlayerName", defaultValue = "Rahul") String playerName, Model model){
 
         Player player=service.getPlayerByName(playerName);
         System.out.println(player);
