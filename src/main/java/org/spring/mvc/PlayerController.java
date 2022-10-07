@@ -1,13 +1,18 @@
 package org.spring.mvc;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class PlayerController {
+
+    @Autowired
+    PlayerService service;
 
     @RequestMapping(value="/searchPlayerForm")
     public String searchPlayerForm(){
@@ -15,11 +20,32 @@ public class PlayerController {
         return "search-player-form";
     }
 
+    //USING HttpServlet
+
+//    @RequestMapping(value ="/showPlayerDetail" )
+//    public String showPlayerDetail(HttpServletRequest request, Model model){
+//        String pName=request.getParameter("playerName");
+//        Player player=service.getPlayerByName(pName);
+//        System.out.println(player);
+//        model.addAttribute("pName",player.getName());
+//        model.addAttribute("pId",player.getId());
+//        model.addAttribute("pAge",player.getAge());
+//        model.addAttribute("pNationality",player.getNationality());
+//        return "show-player-detail";
+//    }
+
+
+    //USING STRING ANNOTATION
     @RequestMapping(value ="/showPlayerDetail" )
-    public String showPlayerDetail(HttpServletRequest request, Model model){
-        String pName=request.getParameter("playerName");
-        model.addAttribute("name",pName);
-        return "player-detail";
+    public String showPlayerDetail(@RequestParam("PlayerName") String playerName, Model model){
+
+        Player player=service.getPlayerByName(playerName);
+        System.out.println(player);
+        model.addAttribute("pName",player.getName());
+        model.addAttribute("pId",player.getId());
+        model.addAttribute("pAge",player.getAge());
+        model.addAttribute("pNationality",player.getNationality());
+        return "show-player-detail";
     }
 
 

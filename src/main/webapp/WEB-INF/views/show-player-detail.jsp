@@ -4,6 +4,10 @@
 <head><title>Player Detail</title></head>
 <body>
 <h1>Player Detail</h1>
-    <p>Player Name is : <b> ${name} </b></p>
+    <p>Player Id :  ${pId} </p>
+    <p>Name : <b> ${pName} </b></p>
+    <pAge :  ${pAge} </p>
+    <p>Nationality :  ${pNationality} </p>
 </body>
 </html>
+
