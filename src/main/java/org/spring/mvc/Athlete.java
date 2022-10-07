@@ -5,6 +5,7 @@ public class Athlete {
     private String country;
 
     private String rank; //A,B,C,D
+    private String[] tournaments;
 
     public Athlete() {
     }
@@ -26,12 +27,21 @@ public class Athlete {
         this.country = country;
     }
 
+
     public String getRank() {
         return rank;
     }
 
     public void setRank(String rank) {
         this.rank = rank;
+    }
+
+    public String[] getTournaments() {
+        return tournaments;
+    }
+
+    public void setTournaments(String[] tournaments) {
+        this.tournaments = tournaments;
     }
 
     @Override

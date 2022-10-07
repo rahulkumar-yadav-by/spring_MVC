@@ -13,19 +13,30 @@
 
         <label>Name </label>
         <form:input path="name" />
+        <br><br>
 
+        <label>Country </label>
         <form:select path="country" >
+
             <form:option label="IN" value="India"/>
             <form:option label="US" value="USA"/>
             <form:option label="NE" value="Nepal" />
             <form:option label="AU" value="Australia" />
         </form:select>
+        <br><br>
 
+        <label>Rank</label>
         <form:radiobutton path="rank" label="Grade 1" value="A" />
         <form:radiobutton path="rank" label="Grade 2" value="B" />
+        <br><br>
 
+        <label>Tournaments </label>
+        <form:checkbox path="tournaments" label="US Open" value="US Open Tournament"/>
+        <form:checkbox path="tournaments" label="Durbon Tour" value="Dourbon Tournament"/>
+        <form:checkbox path="tournaments" label="Asia Open" value="Asia Open "/>
+        <br><br>
 
-        <input type="submit" value="Enter" />
+        <input type="submit" value="Submit" />
     </form:form>
 
 
