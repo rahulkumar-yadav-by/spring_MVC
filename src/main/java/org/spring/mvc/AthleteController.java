@@ -2,8 +2,11 @@ package org.spring.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/athlete")
@@ -16,8 +19,11 @@ public class AthleteController {
     }
 
     @RequestMapping("/showAthleteDetails")
-    public String showAthlete(@ModelAttribute("athlete")Athlete myAthlete){
+    public String showAthlete(@Valid @ModelAttribute("athlete")Athlete myAthlete, BindingResult result){
         System.out.println(myAthlete);
+        if(result.hasErrors()){
+            return "athlete-form";
+        }
         return "athlete-details";
     }
 

@@ -9,7 +9,7 @@
     <head><title>Athlete Details</title></head>
 
     <body>
-        <h1>Athlete Details</h1>
+
         <h2>Athlete Details Added</h2>
         <p>Name : ${athlete.name}</p>
         <p>Country : ${athlete.country}</p>

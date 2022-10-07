@@ -1,6 +1,18 @@
 package org.spring.mvc;
 
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.stereotype.Component;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+
+@Component
 public class Athlete {
+
+//    @NotNull(message="This is a required field")
+//    @Size(min=1,message=" Warning : Mandatory Field (@Size)")
+    @NotEmpty(message=" Warning : Mandatory Field { @NotEmpty }")
     private String name;
     private String country;
 

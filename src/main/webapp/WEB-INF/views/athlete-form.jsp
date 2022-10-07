@@ -5,7 +5,16 @@
 
 <!DOCTYPE html>
 <html>
-<head><title>Add Athlete</title></head>
+<head>
+    <title>Add Athlete</title>
+    <style>
+    .error{
+            color:red;
+            font-style: italic;
+    }
+    </style>
+</head>
+
 <body>
 
     <h2>Athlete Form</h2>
@@ -13,6 +22,7 @@
 
         <label>Name </label>
         <form:input path="name" />
+        <form:errors path="name" cssClass="error" />
         <br><br>
 
         <label>Country </label>
