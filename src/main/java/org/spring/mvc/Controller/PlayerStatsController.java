@@ -15,7 +15,7 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/stats")
 public class PlayerStatsController {
-    @RequestMapping("/showPlayerStatsForm")
+    @RequestMapping("/showPlayerStatsForm") //URL : http://localhost:8080/spring/stats/showPlayerStatsForm
     public String showPlayerStats(Model model){
         model.addAttribute("playerStats",new PlayerStats()); // using model we assign Athlete attributes value using form
         return "head-to-head";

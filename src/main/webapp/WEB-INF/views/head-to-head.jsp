@@ -31,7 +31,7 @@
   <br><br>
 
   <label>Head To Head</label>
-  <form:input path="headToHead" />
+  <form:input path="headToHead" placeholder = "##-## format"/>
   <form:errors path="headToHead" cssClass="error"/>
   <br><br>
 

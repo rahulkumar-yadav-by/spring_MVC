@@ -1,12 +1,17 @@
 package org.spring.mvc.Model;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.spring.mvc.Validation.HeadToHead;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class PlayerStats {
     private String player1;
     private String player2;
     private String player3;
 
+    @NotNull(message = "Required Field")
     @HeadToHead(message = "Invalid Format -> value must have digits in ##-## format")
     private String headToHead;
 
