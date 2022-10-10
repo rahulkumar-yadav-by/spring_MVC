@@ -126,3 +126,4 @@
 0:0:0:0:0:0:0:1 - - [07/Oct/2022:15:30:20 +0530] "POST /springmvc/athlete/showAthleteDetails HTTP/1.1" 200 1775 http-bio-8080-exec-3 10
 0:0:0:0:0:0:0:1 - - [07/Oct/2022:15:31:10 +0530] "GET /springmvc/athlete/showAthleteForm HTTP/1.1" 200 1684 http-bio-8080-exec-2 136
 0:0:0:0:0:0:0:1 - - [07/Oct/2022:15:31:10 +0530] "POST /springmvc/athlete/showAthleteDetails HTTP/1.1" 200 1786 http-bio-8080-exec-3 99
+0:0:0:0:0:0:0:1 - - [07/Oct/2022:16:52:06 +0530] "POST /springmvc/athlete/showAthleteDetails HTTP/1.1" 200 1786 http-bio-8080-exec-6 11

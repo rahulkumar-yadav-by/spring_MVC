@@ -1,6 +1,10 @@
-C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\PlayerController.java
-C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Athlete.java
-C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\PlayerService.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Controller\PlayerStatsController.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Model\PlayerStats.java
 C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Main.java
-C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\AthleteController.java
-C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Player.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Model\Athlete.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Model\Player.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Controller\AthleteController.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Controller\PlayerController.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Validation\HeadToHead.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Validation\HeadTOHeadConstraintValidator.java
+C:\Users\1032496\IdeaProjects\spring_MVC\src\main\java\org\spring\mvc\Service\PlayerService.java

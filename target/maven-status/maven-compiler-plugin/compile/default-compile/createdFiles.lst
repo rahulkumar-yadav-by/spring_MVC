@@ -1,5 +1,9 @@
-org\spring\mvc\PlayerController.class
-org\spring\mvc\PlayerService.class
-org\spring\mvc\Athlete.class
-org\spring\mvc\Player.class
-org\spring\mvc\AthleteController.class
+org\spring\mvc\Controller\AthleteController.class
+org\spring\mvc\Controller\PlayerController.class
+org\spring\mvc\Model\Player.class
+org\spring\mvc\Service\PlayerService.class
+org\spring\mvc\Controller\PlayerStatsController.class
+org\spring\mvc\Model\Athlete.class
+org\spring\mvc\Model\PlayerStats.class
+org\spring\mvc\Validation\HeadTOHeadConstraintValidator.class
+org\spring\mvc\Validation\HeadToHead.class
